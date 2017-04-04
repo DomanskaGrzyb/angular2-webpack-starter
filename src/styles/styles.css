@@ -1,0 +1,27 @@
+@import 'normalize';
+@import 'skeleton';
+
+.header-bar{
+    background-color: goldenrod;
+    color: white;
+}
+
+.spacer{
+    height: 40px;
+}
+
+.warning {
+    color:red;
+}
+
+.ng-valid[required] {
+  border: 2px solid green;
+}
+
+.my-ng-invalid[required] {
+    border: 2px solid red; 
+}
+
+.link {
+    cursor: pointer;
+}

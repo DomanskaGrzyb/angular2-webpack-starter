@@ -7,6 +7,9 @@ const webpackMerge = require('webpack-merge'); // used to merge webpack configs
 const webpackMergeDll = webpackMerge.strategy({plugins: 'replace'});
 const commonConfig = require('./webpack.common.js'); // the settings that are common to prod and dev
 
+const env = require('node-env-file');
+
+env('.env');
 /**
  * Webpack Plugins
  */
@@ -150,6 +153,7 @@ module.exports = function (options) {
           'ENV': JSON.stringify(METADATA.ENV),
           'NODE_ENV': JSON.stringify(METADATA.ENV),
           'HMR': METADATA.HMR,
+          'YT': JSON.stringify(process.env.YT)
         }
       }),
 
