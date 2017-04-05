@@ -7,6 +7,6 @@
     
     <div *ngIf="vidLink" class="twelve columns">
         <div (click)="goBack()" class="link"><h3>Go back</h3></div>
-        <!--<iframe class="u-full-width" height="400px" src={{vidLink}} frameborder="0"></iframe>-->
+        <iframe class="u-full-width" height="400px" width="711px" [src]="safeLink" frameborder="0"></iframe>
     </div>
 </div>
