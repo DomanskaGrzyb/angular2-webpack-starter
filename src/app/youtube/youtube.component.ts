@@ -30,8 +30,8 @@ export class YoutubeComponent implements OnInit {
     getVideos() {
         this._youtubeService.getVideos()
             .subscribe(
-                videos => this.videos = videos,
-                error => this.errorMessage = <any>error
+                (videos) => this.videos = videos,
+                (error) => this.errorMessage = <any>error
             );     
     }
 

@@ -1,8 +1,4 @@
-import {
-  Component,
-  OnInit,
-  ViewEncapsulation
-} from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { AppState } from './app.service';
 
 @Component({
@@ -11,12 +7,8 @@ import { AppState } from './app.service';
   templateUrl: './app.component.html',
 })
 
-export class AppComponent implements OnInit {
-
-  // let env = require('node-env-file');
+export class AppComponent {
 
   constructor( public appState: AppState ) {}
-
-  public ngOnInit() {}
 
 }
